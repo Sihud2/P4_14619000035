@@ -21,12 +21,12 @@ class BukuController extends Controller
         ->join('buku', 'buku.id', '=', 'rak_buku.id_buku')
         ->join('jenis_buku', 'jenis_buku.id', '=', 'rak_buku.id_jenis_buku')
         ->select('buku.judul', 'buku.tahun_terbit', 'jenis_buku.jenis')->get();
-        return view('pertemuan4.buku', compact('buku'));
+        return view('pertemuan4.buku_0035', compact('buku'));
     }
 
     public function exportdatabuku()
     {
-        return Excel::download(new DataBuku, 'databuku.xlsx');
+        return Excel::download(new DataBuku, 'databuku_1461900035.xlsx');
     }
 
     /**

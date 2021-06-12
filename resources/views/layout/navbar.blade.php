@@ -23,7 +23,7 @@
               <a class="nav-link active" aria-current="page" href="/index">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/buku">Data Buku</a>
+              <a class="nav-link" href="/buku_0035">Data Buku</a>
             </li>
             <li class="nav-item">
               {{-- <a class="nav-link" href="/jenis_buku">Jenis Buku</a> --}}

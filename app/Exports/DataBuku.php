@@ -16,7 +16,7 @@ class DataBuku implements FromCollection
         $buku =  DB::table('rak_buku')
         ->join('buku', 'buku.id', '=', 'rak_buku.id_buku')
         ->join('jenis_buku', 'jenis_buku.id', '=', 'rak_buku.id_jenis_buku')
-        ->select('buku.judul', 'buku.tahun_terbit', 'jenis_buku.jenis')->get();
+        ->select('rak_buku.id', 'buku.judul', 'buku.tahun_terbit', 'jenis_buku.jenis')->get();
         return $buku;
     }
 }

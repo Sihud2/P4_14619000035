@@ -26,7 +26,7 @@ Route::post('/login', 'LoginController@store');
 Route::get('/index', 'LoginController@create');
 
 // Menu
-Route::get('/buku', 'BukuController@index');
+Route::get('/buku_0035', 'BukuController@index');
 
 // eksport ke excel
 Route::get('/ekspor', 'BukuController@exportdatabuku');
